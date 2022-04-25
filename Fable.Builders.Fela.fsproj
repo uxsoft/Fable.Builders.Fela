@@ -2,7 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Authors>uxsoft</Authors>
+        <Description>Fable computation expression based bindings for Fela css-in-js library</Description>
+        <PackageProjectUrl>https://github.com/uxsoft/Fable.Builders.Fela</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/uxsoft/Fable.Builders.Fela</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,5 +20,16 @@
       <PackageReference Include="Fable.Builders.React" Version="4.7.0" />
       <PackageReference Include="Feliz" Version="1.59.0" />
     </ItemGroup>
-
+    <ItemGroup>
+        <Content Include="*.fsproj; **\*.fs">
+          <Pack>True</Pack>
+          <PackagePath>fable\</PackagePath>
+        </Content>
+      </ItemGroup>
+      <ItemGroup>
+        <None Include=".\icon.png">
+          <Pack>True</Pack>
+          <PackagePath>\</PackagePath>
+        </None>
+      </ItemGroup>
 </Project>
