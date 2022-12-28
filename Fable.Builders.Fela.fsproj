@@ -10,26 +10,26 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="RenderProviderBuilder.fs" />
-        <Compile Include="Feliz.fs" />
-        <Compile Include="Fela.fs" />
-        <Content Include="README.md" />
+        <Compile Include="RenderProviderBuilder.fs"/>
+        <Compile Include="Feliz.fs"/>
+        <Compile Include="Fela.fs"/>
+        <Content Include="README.md"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Fable.Builders.React" Version="4.7.0" />
-      <PackageReference Include="Feliz" Version="1.59.0" />
+        <PackageReference Include="Fable.Builders.React" Version="4.7.0"/>
+        <PackageReference Include="Feliz" Version="1.59.0"/>
     </ItemGroup>
     <ItemGroup>
         <Content Include="*.fsproj; **\*.fs">
-          <Pack>True</Pack>
-          <PackagePath>fable\</PackagePath>
+            <Pack>True</Pack>
+            <PackagePath>fable\</PackagePath>
         </Content>
-      </ItemGroup>
-      <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
         <None Include=".\icon.png">
-          <Pack>True</Pack>
-          <PackagePath>\</PackagePath>
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
         </None>
-      </ItemGroup>
+    </ItemGroup>
 </Project>
